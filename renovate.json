@@ -1,15 +1,5 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "dependencyDashboard": true,
-    "minimumReleaseAgeBehaviour": "timestamp-optional",
-    "packageRules": [
-        {
-            "defaultRegistryUrls": [
-                "http://localhost:5001"
-            ],
-            "matchDatasources": [
-                "docker"
-            ]
-        }
-    ]
+    "minimumReleaseAgeBehaviour": "timestamp-optional"
 }
