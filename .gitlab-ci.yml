@@ -1,0 +1,13 @@
+---
+stages:
+  - lint
+
+renovate-config-validator:
+  image: renovate/renovate:42.93.1@sha256:3f4d362d0a8902163bee625220c924cfaffa0558f8b6974fe3fcaf58d39f63bb
+  stage: lint
+  rules:
+    - exists:
+        - renovate.json
+  variables:
+    RENOVATE_CONFIG_VALIDATOR_EXTRA_FLAGS: --strict
+    GIT_DEPTH: 1
